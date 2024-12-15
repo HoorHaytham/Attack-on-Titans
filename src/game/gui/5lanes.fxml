@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefWidth="1090.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.Control">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@main%20back.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutY="78.0" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="PC15" mnemonicParsing="false" onAction="#handleLane15" prefHeight="44.0" prefWidth="50.0" text="PC">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedpeircing.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="SC15" mnemonicParsing="false" onAction="#handleLane15" prefHeight="44.0" prefWidth="50.0" text="SC">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedsniper.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="VS15" mnemonicParsing="false" onAction="#handleLane15" prefHeight="44.0" prefWidth="50.0" text="VS">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedvolley.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="WT15" mnemonicParsing="false" onAction="#handleLane15" prefHeight="44.0" prefWidth="50.0" text="WT">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedwalltrap.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+         </children>
+      </HBox>
+       <HBox layoutX="-1.0" layoutY="417.0" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="PC4" mnemonicParsing="false" onAction="#handleLane4" prefHeight="44.0" prefWidth="50.0" text="PC">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedpeircing.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="SC4" mnemonicParsing="false" onAction="#handleLane4" prefHeight="44.0" prefWidth="50.0" text="SC">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedsniper.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="VS4" mnemonicParsing="false" onAction="#handleLane4" prefHeight="44.0" prefWidth="50.0" text="VS">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedvolley.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="WT4" mnemonicParsing="false" onAction="#handleLane4" prefHeight="44.0" prefWidth="50.0" text="WT">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedwalltrap.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+         </children>
+      </HBox> <HBox layoutY="524.0" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="PC5" mnemonicParsing="false" onAction="#handleLane5" prefHeight="44.0" prefWidth="50.0" text="PC">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedpeircing.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="SC5" mnemonicParsing="false" onAction="#handleLane5" prefHeight="44.0" prefWidth="50.0" text="SC">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedsniper.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="VS5" mnemonicParsing="false" onAction="#handleLane5" prefHeight="44.0" prefWidth="50.0" text="VS">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedvolley.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="WT5" mnemonicParsing="false" onAction="#handleLane5" prefHeight="44.0" prefWidth="50.0" text="WT">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedwalltrap.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+         </children>
+      </HBox>
+      <Button fx:id="passTurnButton5" blendMode="LIGHTEN" layoutX="865.0" layoutY="9.0" mnemonicParsing="false" onAction="#passTurnButton5Action" prefHeight="49.0" prefWidth="210.0" text="PASS TURN">
+         <font>
+            <Font name="ROGFonts-Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.30214425921440125" green="0.6526315808296204" blue="0.5766926407814026" />
+               </color>
+               <input>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+      <HBox layoutY="65.0" prefHeight="25.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Label fx:id="pl15" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="sl15" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="vl15" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="wl15" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox layoutX="-1.0" layoutY="282.0" prefHeight="25.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Label fx:id="pl35" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="sl35" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="vl35" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="wl35" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox layoutX="-1.0" layoutY="173.0" prefHeight="25.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Label fx:id="pl25" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="sl25" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="vl25" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="wl25" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox layoutX="-1.0" layoutY="394.0" prefHeight="25.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Label fx:id="pl4" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="sl4" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="vl4" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="wl4" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox layoutX="1.0" layoutY="502.0" prefHeight="25.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Label fx:id="pl5" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="sl5" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="vl5" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+            <Label fx:id="wl5" text="0" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox layoutX="9.0" layoutY="17.0" prefHeight="35.0" prefWidth="850.0">
+         <children>
+            <Label fx:id="scoreLabel5" prefHeight="18.0" prefWidth="180.0" text="Score" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow radius="9.75" spread="0.4" width="20.0">
+                     <color>
+                        <Color red="0.5686274766921997" green="0.06666667014360428" blue="0.06666667014360428" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label fx:id="turnLabel5" prefHeight="18.0" prefWidth="170.0" text="Turn" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow radius="9.75" spread="0.4" width="20.0">
+                     <color>
+                        <Color red="0.5686274766921997" green="0.06666667014360428" blue="0.06666667014360428" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label fx:id="phaseLabel5" prefHeight="22.0" prefWidth="276.0" text="Phase" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow radius="9.75" spread="0.4" width="20.0">
+                     <color>
+                        <Color red="0.5686274766921997" green="0.06666667014360428" blue="0.06666667014360428" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label fx:id="resourcesLabel5" prefHeight="18.0" prefWidth="182.0" text="Resources" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow radius="9.75" spread="0.4" width="20.0">
+                     <color>
+                        <Color red="0.5686274766921997" green="0.06666667014360428" blue="0.06666667014360428" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+         </children>
+      </HBox>
+      <VBox fx:id="hd15" layoutY="119.0" prefHeight="20.0" prefWidth="188.0">
+         <children>
+            <Label fx:id="wallHealth15" prefHeight="30.0" prefWidth="200.0" text="Health" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.6700000166893005" green="0.6578618288040161" blue="0.09380000084638596" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label fx:id="wallDanger15" prefHeight="0.0" prefWidth="188.0" text="Danger Level" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.6700000166893005" green="0.6578618288040161" blue="0.09380000084638596" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+         </children>
+      </VBox>
+      <VBox fx:id="hd35" layoutY="336.0" prefHeight="22.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="wallHealth35" prefHeight="30.0" prefWidth="200.0" text="Health" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.6705882549285889" green="0.658823549747467" blue="0.0941176488995552" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label fx:id="wallDanger35" prefHeight="30.0" prefWidth="200.0" text="Danger Level" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.6700000166893005" green="0.6578618288040161" blue="0.09380000084638596" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+         </children>
+      </VBox>
+      <VBox fx:id="hd25" layoutY="227.0" prefHeight="14.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="wallHealth25" prefHeight="30.0" prefWidth="200.0" text="Health" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.6700000166893005" green="0.6578618288040161" blue="0.09380000084638596" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label fx:id="wallDanger25" prefHeight="30.0" prefWidth="200.0" text="Danger Level" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.6700000166893005" green="0.6578618288040161" blue="0.09380000084638596" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+         </children>
+      </VBox> 
+      <VBox fx:id="hd4" layoutY="455.0" prefHeight="14.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="wallHealth4" prefHeight="30.0" prefWidth="200.0" text="Health" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.6700000166893005" green="0.6578618288040161" blue="0.09380000084638596" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label fx:id="wallDanger4" prefHeight="30.0" prefWidth="200.0" text="Danger Level" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.6700000166893005" green="0.6578618288040161" blue="0.09380000084638596" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+         </children>
+      </VBox> <VBox fx:id="hd5" layoutY="563.0" prefHeight="17.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="wallHealth5" prefHeight="30.0" prefWidth="200.0" text="Health" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.6700000166893005" green="0.6578618288040161" blue="0.09380000084638596" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label fx:id="wallDanger5" prefHeight="30.0" prefWidth="200.0" text="Danger Level" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="10.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.6700000166893005" green="0.6578618288040161" blue="0.09380000084638596" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+         </children>
+      </VBox>
+      <ImageView fx:id="laneImage15" fitHeight="103.0" fitWidth="438.0" layoutX="204.0" layoutY="62.0" pickOnBounds="true">
+         <image>
+            <Image url="@new%20lane%202.jpg" />
+         </image>
+      </ImageView>
+       <ImageView fx:id="laneImage25" fitHeight="103.0" fitWidth="438.0" layoutX="204.0" layoutY="173.0" pickOnBounds="true">
+         <image>
+            <Image url="@new%20lane%202.jpg" />
+         </image>
+      </ImageView>
+       <ImageView fx:id="laneImage35" fitHeight="103.0" fitWidth="438.0" layoutX="204.0" layoutY="284.0" pickOnBounds="true">
+         <image>
+            <Image url="@new%20lane%202.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="laneImage4" fitHeight="103.0" fitWidth="438.0" layoutX="204.0" layoutY="394.0" pickOnBounds="true">
+         <image>
+            <Image url="@new%20lane%202.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="-1.0" layoutY="295.0" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="PC35" mnemonicParsing="false" onAction="#handleLane35" prefHeight="44.0" prefWidth="50.0" text="PC">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedpeircing.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="SC35" mnemonicParsing="false" onAction="#handleLane35" prefHeight="44.0" prefWidth="50.0" text="SC">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedsniper.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="VS35" mnemonicParsing="false" onAction="#handleLane35" prefHeight="44.0" prefWidth="50.0" text="VS">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedvolley.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="WT35" mnemonicParsing="false" onAction="#handleLane35" prefHeight="44.0" prefWidth="50.0" text="WT">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedwalltrap.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="-1.0" layoutY="186.0" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="PC25" mnemonicParsing="false" onAction="#handleLane25" prefHeight="44.0" prefWidth="50.0" text="PC">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedpeircing.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="SC25" mnemonicParsing="false" onAction="#handleLane25" prefHeight="44.0" prefWidth="50.0" text="SC">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedsniper.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="VS25" mnemonicParsing="false" onAction="#handleLane25" prefHeight="44.0" prefWidth="50.0" text="VS">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedvolley.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+            <Button fx:id="WT25" mnemonicParsing="false" onAction="#handleLane25" prefHeight="44.0" prefWidth="50.0" text="WT">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@resizedwalltrap.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect></Button>
+         </children>
+      </HBox>
+      <VBox layoutX="718.0" layoutY="147.0" prefHeight="129.0" prefWidth="186.0">
+         <children>
+            <Label text="PIERCING CANNON" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.19040000438690186" green="0.5513867735862732" blue="0.6800000071525574" />
+                     </color></DropShadow>
+               </effect>
+            </Label>
+            <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@peircing%20cannon.jpg" />
+               </image>
+            </ImageView>
+            <Label text="25" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label prefHeight="40.0" prefWidth="40.0" text="10" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label text="ANTI-TITAN SHELL" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="908.0" layoutY="147.0" prefHeight="184.0" prefWidth="180.0">
+         <children>
+            <Label prefHeight="23.0" prefWidth="203.0" text="SNIPER CANNON" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.19040000438690186" green="0.5513867735862732" blue="0.6800000071525574" />
+                     </color></DropShadow>
+               </effect>
+            </Label>
+            <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sniper%20.jpg" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="CENTER" prefHeight="20.0" prefWidth="163.0" text="25" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label text="35" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label text="LONG RANGE SPEAR" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="726.0" layoutY="355.0" prefHeight="186.0" prefWidth="276.0">
+         <children>
+            <Label prefHeight="24.0" prefWidth="360.0" text="VOLLEY SPREAD " textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.19040000438690186" green="0.5513867735862732" blue="0.6800000071525574" />
+                     </color></DropShadow>
+               </effect>
+            </Label>
+            <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@volleyspread.jpg" />
+               </image>
+            </ImageView>
+            <Label text="100" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label text="5" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label text="WALL SPREAD CANNON" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </VBox>
+      <Label blendMode="COLOR_DODGE" layoutX="667.0" layoutY="312.0" prefHeight="21.0" prefWidth="50.0" text="NAME:" textFill="#80481d">
+         <font>
+            <Font name="ROGFonts-Regular" size="9.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect></Label>
+      <Label blendMode="COLOR_DODGE" layoutX="666.0" layoutY="152.0" text="TYPE:" textFill="#80481d">
+         <font>
+            <Font name="ROGFonts-Regular" size="9.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect></Label>
+      <Label blendMode="COLOR_DODGE" layoutX="665.0" layoutY="276.0" text="PRICE:" textFill="#80481d">
+         <font>
+            <Font name="ROGFonts-Regular" size="9.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect></Label>
+      <Label blendMode="COLOR_DODGE" layoutX="665.0" layoutY="295.0" text="DAMAGE:" textFill="#80481d">
+         <font>
+            <Font name="ROGFonts-Regular" size="9.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </DropShadow>
+         </effect></Label>
+      <Label layoutX="614.0" layoutY="353.0" />
+      <VBox layoutX="917.0" layoutY="356.0" prefHeight="184.0" prefWidth="170.0">
+         <children>
+            <Label prefHeight="23.0" prefWidth="224.0" text="WALL TRAP" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.19040000438690186" green="0.5513867735862732" blue="0.6800000071525574" />
+                     </color></DropShadow>
+               </effect>
+            </Label>
+            <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@wall%20trap.jpg" />
+               </image>
+            </ImageView>
+            <Label prefHeight="24.0" prefWidth="48.0" text="100" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label text="100" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font></Label>
+            <Label prefHeight="60.0" prefWidth="384.0" text="PROXIMITY TRAP" textFill="WHITE">
+               <font>
+                  <Font name="ROGFonts-Regular" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </VBox>
+      <Pane fx:id="lane15" layoutX="204.0" layoutY="71.0" prefHeight="90.0" prefWidth="438.0" />
+      <Pane fx:id="lane25" layoutX="204.0" layoutY="180.0" prefHeight="90.0" prefWidth="438.0" />
+      <Pane fx:id="lane35" layoutX="204.0" layoutY="291.0" prefHeight="90.0" prefWidth="438.0" />
+      <Pane fx:id="lane4" layoutX="204.0" layoutY="402.0" prefHeight="90.0" prefWidth="438.0" />
+      <ImageView fx:id="laneImage5" fitHeight="103.0" fitWidth="438.0" layoutX="204.0" layoutY="502.0" pickOnBounds="true">
+         <image>
+            <Image url="@new%20lane%202.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="lane5" layoutX="202.0" layoutY="508.0" prefHeight="90.0" prefWidth="438.0" />
+   </children>
+</AnchorPane>

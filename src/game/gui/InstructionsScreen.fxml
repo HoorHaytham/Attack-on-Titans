@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.Control">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@instructionsbackglitch.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="492.0" fitWidth="553.0" layoutX="274.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@INST%20PART.jpg" />
+         </image>
+      </ImageView>
+      <Label blendMode="DIFFERENCE" layoutX="375.0" layoutY="83.0" text="INSTRUCTIONS" textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="37.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <input>
+                  <Glow>
+                     <input>
+                        <DropShadow />
+                     </input>
+                  </Glow>
+               </input>
+               <color>
+                  <Color red="0.10038986057043076" green="0.24416829645633698" blue="0.2631579041481018" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="272.0" layoutY="159.0" textFill="WHITE" />
+      <Button fx:id="startButton" blendMode="OVERLAY" layoutX="490.0" layoutY="399.0" mnemonicParsing="false" onAction="#startButtonAction" prefHeight="38.0" prefWidth="136.0" text="START" textFill="#c10101">
+         <font>
+            <Font name="ROGFonts-Regular" size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow height="0.0" radius="4.75">
+               <input>
+                  <DropShadow height="30.36" radius="17.605" spread="0.28" width="42.06">
+                     <input>
+                        <Glow>
+                           <input>
+                              <InnerShadow>
+                                 <input>
+                                    <DropShadow height="49.07" radius="33.3925" width="86.5">
+                                       <color>
+                                          <Color red="1.0" />
+                                       </color></DropShadow>
+                                 </input>
+                              </InnerShadow>
+                           </input>
+                        </Glow>
+                     </input>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.11754386126995087" blue="0.11754386126995087" />
+                     </color>
+                  </DropShadow>
+               </input></InnerShadow>
+         </effect>
+      </Button>
+      <Text blendMode="EXCLUSION" fill="WHITE" fontSmoothingType="LCD" layoutX="333.0" layoutY="159.0" lineSpacing="7.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Battle field! The game will have no winning condition. Your mission is to defeat as many titans as possible.  You will lose when all the starting lanes become destroyed due to titan attacks. In each turn you can either deploy a weapon to one of your active lanes or pass your turn without deploring any weapons. Tips for Success : Plan your moves carefully and anticipate your opponent's strategies!" textAlignment="CENTER" wrappingWidth="450.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="18.68" radius="8.835" width="18.66">
+               <input>
+                  <DropShadow>
+                     <input>
+                        <Glow />
+                     </input>
+                  </DropShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

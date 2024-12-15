@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.Control">
+   <children>
+      <ImageView fitHeight="683.0" fitWidth="1167.0" layoutX="-21.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-9.0" AnchorPane.leftAnchor="-30.0" AnchorPane.rightAnchor="-30.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@GameOverScreen.jpg" />
+         </image></ImageView>
+      <Button fx:id="playAgain" blendMode="EXCLUSION" layoutX="497.0" layoutY="393.0" mnemonicParsing="false" onAction="#playAgainAction" prefHeight="55.0" prefWidth="154.0" text="PLAY AGAIN" textFill="#631010">
+         <font>
+            <Font name="ROGFonts-Regular" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow height="93.52" radius="39.8275" spread="0.57" width="67.79">
+               <color>
+                  <Color blue="0.07199999690055847" green="0.4359999895095825" opacity="0.8396656513214111" red="0.800000011920929" />
+               </color>
+               <input>
+                  <Glow />
+               </input>
+            </DropShadow>
+         </effect></Button>
+      <Label fx:id="finalScore" blendMode="ADD" layoutX="461.0" layoutY="316.0" onMouseClicked="#showScoreAction" onMouseEntered="#showScoreAction" onMouseExited="#showScoreAction" prefHeight="55.0" prefWidth="235.0" text="" textFill="#efefef">
+         <font>
+            <Font name="ROGFonts-Regular" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.23">
+               <input>
+                  <Glow>
+                     <input>
+                        <DropShadow />
+                     </input>
+                  </Glow>
+               </input>
+               <color>
+                  <Color blue="0.0551999993622303" green="0.5457654595375061" red="0.9200000166893005" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+   </children>
+</AnchorPane>
